@@ -1,16 +1,74 @@
-# React + Vite
+![frameDiary](https://github.com/user-attachments/assets/a81c0f71-f29c-49c6-a655-5d87d61a3780)
+# 🎬 FrameDiary — Your Personal Movie Diary  
+FrameDiary is a modern, dynamic movie-logging platform inspired by Letterboxd. It allows users to discover trending films, explore in-depth details, and create personalized watchlists, favorites, and watched collections.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built with a strong focus on clean UI, smooth navigation, and efficient API interaction, FrameDiary delivers a polished and responsive movie-discovering experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+### 🔍 **Homepage Sections**
+The homepage highlights multiple curated categories:  
+- **Trending Now**  
+- **Recently Released**  
+- **Classics**  
+- **Top Rated Films**  
+- **Award Winners**  
+- **Old Films**  
+Each section fetches live data for dynamic updates.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎥 **Powerful Movie Search**
+Instantly search any movie by title using real-time API results, with accurate posters, release dates, and ratings.
 
-## Expanding the ESLint configuration
+### 📄 **Detailed Movie Pages**
+Each movie card opens a fully structured details page featuring:
+- Movie poster and backdrop  
+- **Runtime, release year, genres**  
+- Tagline & full description  
+- **Cast and crew list**  
+- **Official trailer (embedded video)**  
+- **Where to Watch** (platform availability)  
+- **Similar Movies** carousel  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⭐ **User Library**
+Users can organize movies into three lists:
+- **Favorites**  
+- **Watched**  
+- **Watchlist**  
+
+Each category supports:
+- Add movie  
+- Remove movie  
+- Persistent storage through local state
+
+### ⚡ **Smooth Navigation**
+Fast page-to-page transitions handled through React Router.
+
+---
+
+## 🧰 Tech Stack
+
+### **Frontend**
+- React  
+- React Router
+- Custom reusable components  
+- Tailwind CSS 
+
+### **APIs**
+- TMDB API  
+
+### **Other**
+- Fetch
+- Local storage logic  
+- Responsive design techniques  
+
+---
+
+## 📦 Installation & Setup
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
